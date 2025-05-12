@@ -11,6 +11,10 @@ class ErrorView:
         main_frame = Utils.frame(self.window)
         main_frame.pack(padx=20, pady=20)
         
+        # Add error image 
+        error_img = Utils.image(main_frame, "image/error_banner.jpg")
+        error_img.pack(pady=10)
+        
         # Exception type label
         exception_label = Utils.label(main_frame, exception_type)
         exception_label.pack(pady=10)
